@@ -55,7 +55,11 @@ video {
 .layout {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 2px solid black;
+}
+
+.layout .layout-3 {
+  margin: 0px;
+  padding: 0px;
 }
 
 .header {
