@@ -3,6 +3,9 @@
 // ==================================== */
 
 :root {
+  --dark-red: #150404;
+  --black: #000000;
+  --light: #FAE0A7;
 }
 
 /* ====================================
@@ -23,7 +26,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
+  background: var(--dark-red, #150404);
+  color: var(--light);
   font-size: 1rem;
   line-height: 1.25;
 }
@@ -47,6 +51,44 @@ video {
 header {
   background-image: url(../img/salle-restaurant-jazz.jpg);
 }
+
+h1 {
+  text-align: center;
+  font-family: Judson;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+nav {
+  border-radius: 55px;
+  border: 1px solid var(--dor-light, #FAE0A7);
+  background: var(--black, #000);
+  width: 290px;
+  height: 101px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  nav {
+    border-radius: 50px;
+    width: 1028px;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+  }
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
