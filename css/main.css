@@ -44,6 +44,9 @@ video {
   margin-top: 16px;
 }
 
+header {
+  background-image: url(../img/salle-restaurant-jazz.jpg);
+}
 .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
