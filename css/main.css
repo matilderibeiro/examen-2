@@ -41,6 +41,10 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+  border-radius: 230px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 /*Bootstrap*/
@@ -50,6 +54,8 @@ video {
 
 header {
   background-image: url(../img/salle-restaurant-jazz.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -58,6 +64,14 @@ h1 {
   font-size: 48px;
   font-style: italic;
   font-weight: 400;
+  margin: 93px 0 36px 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin: 307px 0 315px;
+    font-size: 180px;
+  }
 }
 
 nav {
@@ -89,32 +103,61 @@ a {
   align-items: center;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+.animation-blur {
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: blur(2px);
 }
 
-.layout {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+@media (min-width: 768px) {
+  .animation-blur {
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  filter: blur(2px);
+  }
 }
 
-.layout .layout-3 {
-  margin: 0px;
-  padding: 0px;
+.button_more_info {
+  border-radius: 50px;
+  border: 1px solid var(--dor-light, #FAE0A7);
+  background: var(--black, #000);
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 20px;
+  width: 87px;
+  height: 37.901px;
 }
 
-.header {
-  background: #2b2d42;
+.button_reservations {
+  color: var(--dor-light, #FAE0A7);
+  border: 1px solid var(--dor-light, #FAE0A7);
+  background: var(--black, #000);
+  border-radius: 50px;
+  text-align: center;
+  font-family: Judson;
+  font-size: 32px;
+  width: 290px;
+  height: 72px;
+  text-decoration-line: underline;
 }
 
-.footer {
-  background: #92dce5;
+footer {
+  background: var(--black);
 }
 
-.main {
-  background: #f0e0ff;
+.footer-content {
+  border: 1px solid var(--dor-light, #FAE0A7);
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0 25px;
 }
