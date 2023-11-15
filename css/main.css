@@ -47,6 +47,15 @@ video {
   object-fit: cover;
 }
 
+.img-section-la-carte,
+.img-woman-model {
+  margin-bottom: 34px;
+}
+
+.img-band {
+  margin-top: 34px;
+}
+
 /*Bootstrap*/
 .row + .row {
   margin-top: 16px;
@@ -74,6 +83,15 @@ h1 {
   }
 }
 
+h2 {
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 nav {
   border-radius: 55px;
   border: 1px solid var(--dor-light, #FAE0A7);
@@ -97,13 +115,17 @@ nav {
   }
 }
 
+main {
+  margin: 34px 0 74px;
+}
+
 a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.animation-blur {
+.carousel-text-blur {
   color: var(--dor-light, #FAE0A7);
   font-family: Judson;
   font-size: 64px;
@@ -111,6 +133,25 @@ a {
   font-weight: 400;
   line-height: normal;
   filter: blur(2px);
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  animation: linear 15s infinite;
+  overflow: hidden;
+}
+
+.container-carousel-text {
+  overflow: hidden;
+  background-color: #000;
+}
+
+@keyframes carousel-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-785px);
+  }
 }
 
 @media (min-width: 768px) {
