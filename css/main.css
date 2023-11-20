@@ -20,6 +20,7 @@
 
 html {
   font-size: 16px;
+  font-family: Inika;
 }
 
 body {
@@ -30,10 +31,6 @@ body {
   color: var(--light);
   font-size: 1rem;
   line-height: 1.25;
-}
-
-a {
-  color: inherit;
 }
 
 img,
@@ -92,6 +89,15 @@ h2 {
   line-height: normal;
 }
 
+@media (min-width: 768px) {
+  h2 {
+    color: var(--dor-light, #FAE0A7);
+    font-family: Judson;
+    font-size: 86px;
+    font-weight: 400;
+  }
+}
+
 nav {
   border-radius: 55px;
   border: 1px solid var(--dor-light, #FAE0A7);
@@ -100,6 +106,12 @@ nav {
   height: 101px;
   font-size: 16px;
   text-transform: uppercase;
+  padding: 6px;
+}
+
+.nav-container, .container-button-reservation {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -123,39 +135,41 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: inherit;
+}
+
+p {
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.text-la-carte {
+  text-align: center;
+  padding-bottom: 34px;
 }
 
 .carousel-text-blur {
   color: var(--dor-light, #FAE0A7);
   font-family: Judson;
   font-size: 64px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   filter: blur(2px);
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  animation: linear 15s infinite;
-  overflow: hidden;
 }
 
-.container-carousel-text {
-  overflow: hidden;
-  background-color: #000;
-}
-
-@keyframes carousel-text {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-785px);
-  }
+.carousel-text {
+  color: var(--dor-light, #FAE0A7);
+  font-family: Judson;
+  font-size: 48px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
-  .animation-blur {
+  .carousel-text-blur {
   color: var(--dor-light, #FAE0A7);
   font-family: Judson;
   font-size: 150px;
@@ -163,6 +177,17 @@ a {
   font-weight: 400;
   line-height: normal;
   filter: blur(2px);
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-text {
+    color: var(--dor-light, #FAE0A7);
+    font-family: Judson;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
@@ -175,6 +200,7 @@ a {
   font-size: 20px;
   width: 87px;
   height: 37.901px;
+  text-decoration-line: underline;
 }
 
 .button_reservations {
