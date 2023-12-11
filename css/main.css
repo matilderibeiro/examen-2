@@ -60,8 +60,14 @@ video {
   position: absolute;
   color: var(--dor-light, #FAE0A7);
   font-family: Judson;
-  font-size: 64px;
+  font-size: 29px;
   opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .img-section-la-carte p {
+    font-size: 64px;
+  }
 }
 
 .img-section-la-carte:hover p{
@@ -70,6 +76,14 @@ video {
   transition-duration: 0s;
   transition-delay: 0s;
 }
+
+.img-section-la-carte:hover {
+  opacity: 50%;
+  color: var(--dor-light, #FAE0A7);
+  transition-duration: 0s;
+  transition-delay: 0s;
+}
+
 
 .img-section-la-carte,
 .img-woman-model {
@@ -326,19 +340,25 @@ footer {
   align-items: center;
 }
 
-
 .footer-content {
   border: 1px solid var(--dor-light, #FAE0A7);
   color: var(--dor-light, #FAE0A7);
   font-family: Judson;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 400;
-  padding: 48px 25px;
-  width: 33.3333333%;
+  padding: 20px 25px;
+  width: 100%;
 }
 
-footer .width{
-  width: 50%;
+@media (min-width: 768px) {
+  .footer-content {
+   width: 33.3333333%;
+   font-size: 32px;
+   padding: 48px 25px;
+  }
+  footer .width{
+   width: 50%;
+  }
 }
 
 .footer-content:hover {
